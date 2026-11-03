@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="WEBARA Digital Services helps businesses grow with websites, creative designs and digital solutions.">
+<title>WEBARA | Digital Services</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Poppins',sans-serif;background:#090914;color:white}
+:root{--purple:#9b5cff;--pink:#c14bff;--muted:#aaa5bd}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 8%;background:#0d0b19;position:sticky;top:0;z-index:10;border-bottom:1px solid #292039}
+.logo{font-size:28px;font-weight:800;letter-spacing:2px}
+.logo span{color:var(--purple)}
+nav a{color:white;text-decoration:none;margin-left:25px;font-size:14px}
+nav a:hover{color:var(--purple)}
+.hero{min-height:570px;padding:110px 8%;display:flex;flex-direction:column;justify-content:center;background:radial-gradient(ellipse at 80% 40%,#51218b66,transparent 50%),#090914}
+.tag{color:#c39bff;letter-spacing:3px;font-size:13px}
+.hero h1{font-size:clamp(42px,7vw,75px);line-height:1.15;margin:20px 0}
+.hero h1 span{color:var(--purple)}
+.hero p{color:var(--muted);max-width:600px;line-height:1.8}
+.btn{display:inline-block;margin-top:28px;padding:14px 28px;background:linear-gradient(100deg,#8b45ed,#c14bff);border-radius:8px;color:white;text-decoration:none;font-weight:600;border:0;cursor:pointer}
+section{padding:75px 8%}
+.heading{text-align:center;margin-bottom:45px}
+.heading h2{font-size:36px}
+.heading p{color:var(--muted);margin-top:10px}
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.card{background:#151323;border:1px solid #302344;border-radius:14px;padding:25px;transition:.3s}
+.card:hover{transform:translateY(-6px);border-color:var(--purple)}
+.card .emoji{font-size:30px}
+.card h3{margin:15px 0 8px;font-size:18px}
+.card p{color:var(--muted);font-size:13px;line-height:1.7}
+.price{color:#c69bff;font-size:19px;font-weight:700;margin-top:15px}
+.order-section{background:#100e1d}
+.order-box{max-width:750px;margin:auto;background:#191529;border:1px solid #392b52;padding:35px;border-radius:15px}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.field{margin-bottom:18px}
+.field label{display:block;margin-bottom:8px;font-size:13px}
+.field input,.field select,.field textarea{width:100%;padding:13px;background:#0e0c19;border:1px solid #423452;border-radius:7px;color:white;font-family:inherit;outline:none}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--purple)}
+.field select option{background:#151323}
+textarea{resize:vertical;min-height:100px}
+.full{grid-column:1/-1}
+.submit{width:100%;font-size:16px}
+.note{font-size:12px;color:var(--muted);margin-top:12px;text-align:center}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.about h2{font-size:35px;margin-bottom:15px}
+.about p{color:var(--muted);line-height:1.9}
+.about-box{padding:35px;background:linear-gradient(140deg,#35165d,#171326);border-radius:15px;border:1px solid #513276}
+footer{padding:35px 8%;text-align:center;background:#07070e;color:var(--muted);font-size:13px}
+footer strong{color:white}
+@media(max-width:650px){nav{padding:16px 5%;flex-wrap:wrap;gap:12px}nav a{margin-left:10px;font-size:12px}.hero{padding:85px 6%}section{padding:60px 6%}.form-grid,.about{grid-template-columns:1fr}.order-box{padding:22px}.heading h2{font-size:29px}}
+</style>
+</head>
+<body>
+<nav>
+ <div class="logo">WEB<span>ARA</span></div>
+ <div><a href="#home">Home</a><a href="#services">Services</a><a href="#about">About</a><a href="#order">Order</a></div>
+</nav>
+<header class="hero" id="home">
+ <div class="tag">WELCOME TO WEBARA DIGITAL SERVICES</div>
+ <h1>Grow Your Business<br>With <span>Digital Power.</span></h1>
+ <p>We help businesses build their digital identity through professional websites, creative designs and smart digital solutions. Your business deserves to stand out.</p>
+ <a href="#services" class="btn">Explore Our Services →</a>
+</header>
+<section id="services">
+ <div class="heading"><h2>Our Services</h2><p>Professional digital solutions at affordable prices.</p></div>
+ <div class="services">
+  <div class="card"><div class="emoji">🌐</div><h3>Website Development</h3><p>Professional and responsive websites for your business.</p><div class="price">Starting ₹7,000</div></div>
+  <div class="card"><div class="emoji">🎨</div><h3>Thumbnail Design</h3><p>Eye-catching YouTube thumbnails to make content stand out.</p><div class="price">Starting ₹299</div></div>
+  <div class="card"><div class="emoji">✨</div><h3>Logo Design</h3><p>Creative brand logos for a unique business identity.</p><div class="price">Starting ₹799</div></div>
+  <div class="card"><div class="emoji">📱</div><h3>Social Media Designs</h3><p>Instagram posts, stories and promotional creatives.</p><div class="price">Starting ₹249</div></div>
+  <div class="card"><div class="emoji">🎬</div><h3>Video & Reel Editing</h3><p>Professional editing for reels and promotional videos.</p><div class="price">Starting ₹399</div></div>
+  <div class="card"><div class="emoji">📍</div><h3>Google Maps Optimization</h3><p>Improve your business profile and local online visibility.</p><div class="price">Starting ₹1,000</div></div>
+  <div class="card"><div class="emoji">📈</div><h3>SEO Services</h3><p>Basic SEO setup to improve your website visibility.</p><div class="price">Starting ₹1,499</div></div>
+  <div class="card"><div class="emoji">⭐</div><h3>Monthly Review Management</h3><p>Genuine customer review collection and review management.</p><div class="price">Starting ₹999</div></div>
+  <div class="card"><div class="emoji">💼</div><h3>Business Branding</h3><p>Business cards, banners and brand identity designs.</p><div class="price">Starting ₹299</div></div>
+  <div class="card"><div class="emoji">📢</div><h3>Social Media Management</h3><p>Content planning and social media account management.</p><div class="price">Starting ₹2,499</div></div>
+ </div>
+</section>
+<section id="about">
+ <div class="about">
+  <div><h2>Why Choose WEBARA?</h2><p>WEBARA is a digital services brand focused on helping local businesses and creators grow online. From website development to creative graphic designing, we provide solutions that help your brand create a strong digital identity.</p></div>
+  <div class="about-box"><h2>Make Your Business Digital.</h2><p>Creative Ideas. Professional Designs. Affordable Solutions.</p><a href="#order" class="btn">Get Started →</a></div>
+ </div>
+</section>
+<section class="order-section" id="order">
+ <div class="heading"><h2>Place Your Order</h2><p>Select your requirements and contact WEBARA directly on WhatsApp.</p></div>
+ <div class="order-box">
+  <form id="orderForm">
+   <div class="form-grid">
+    <div class="field"><label for="name">Your Name *</label><input type="text" id="name" placeholder="Enter your name" required></div>
+    <div class="field"><label for="phone">Your Phone Number</label><input type="tel" id="phone" placeholder="Enter phone number"></div>
+    <div class="field full"><label for="service">Select Your Service *</label><select id="service" required><option value="">Choose a service</option><option value="Website Development">Website Development</option><option value="Thumbnail Design">Thumbnail Design</option><option value="Logo Design">Logo Design</option><option value="Social Media Design">Social Media Design</option><option value="Video Editing">Video & Reel Editing</option><option value="Google Maps Optimization">Google Maps Optimization</option><option value="SEO">SEO Services</option><option value="Review Management">Monthly Review Management</option><option value="Business Branding">Business Branding</option><option value="Social Media Management">Social Media Management</option><option value="Other">Other / Custom Work</option></select></div>
+    <div class="field full"><label for="detail">Select Type / Requirement *</label><select id="detail" required><option value="">First select a service</option></select></div>
+    <div class="field"><label for="budget">Estimated Budget</label><select id="budget"><option>Not decided</option><option>Below ₹1,000</option><option>₹1,000 - ₹3,000</option><option>₹3,000 - ₹7,000</option><option>₹7,000 - ₹15,000</option><option>Above ₹15,000</option></select></div>
+    <div class="field"><label for="contact">Preferred Contact</label><select id="contact"><option>WhatsApp</option><option>Phone Call</option></select></div>
+    <div class="field full"><label for="message">Additional Details</label><textarea id="message" placeholder="Tell us more about your project..."></textarea></div>
+   </div>
+   <button class="btn submit" type="submit">Send Order on WhatsApp →</button>
+   <p class="note">WhatsApp will open with your order details ready to send.</p>
+  </form>
+ </div>
+</section>
+<footer><div class="logo">WEB<span>ARA</span></div><p>Digital Solutions for a Better Business Future.</p><p>Contact: <strong>8655567787</strong></p><p style="margin-top:15px">© 2026 WEBARA Digital Services. All Rights Reserved.</p></footer>
+<script>
+const service=document.getElementById("service");
+const detail=document.getElementById("detail");
+const options={
+ "Website Development":["Business Website","Portfolio Website","E-commerce Website","Landing Page","Coaching Classes Website","Restaurant Website","Multi-page Website","Custom Website"],
+ "Thumbnail Design":["YouTube Gaming Thumbnail","YouTube Education Thumbnail","YouTube Vlog Thumbnail","Business Promotional Thumbnail","Other Thumbnail"],
+ "Logo Design":["Business Logo","Modern Minimal Logo","3D Logo","Typography Logo","Custom Logo"],
+ "Social Media Design":["Instagram Post","Instagram Story","Facebook Post","YouTube Channel Art","Social Media Banner"],
+ "Video Editing":["Instagram Reel","YouTube Shorts","YouTube Long Video","Business Advertisement","Promotional Video"],
+ "Google Maps Optimization":["New Google Business Profile Setup","Existing Profile Optimization","Business Information Update","Local Visibility Improvement"],
+ "SEO":["Basic SEO Setup","On-page SEO","Website SEO","Local SEO"],
+ "Review Management":["Monthly Review Management","Genuine Review Collection","Customer Feedback Management"],
+ "Business Branding":["Visiting Card","Business Banner","Brochure Design","Complete Branding Package"],
+ "Social Media Management":["Instagram Management","Facebook Management","Monthly Content Planning","Complete Social Media Management"],
+ "Other":["Custom Digital Service","Other Requirement"]
+};
+service.addEventListener("change",function(){
+ detail.innerHTML='<option value="">Choose your requirement</option>';
+ (options[this.value]||[]).forEach(item=>{const option=document.createElement("option");option.value=item;option.textContent=item;detail.appendChild(option)});
+});
+document.getElementById("orderForm").addEventListener("submit",function(e){
+ e.preventDefault();
+ const name=document.getElementById("name").value.trim();
+ const phone=document.getElementById("phone").value.trim();
+ const selectedService=service.value;
+ const selectedDetail=detail.value;
+ const budget=document.getElementById("budget").value;
+ const contact=document.getElementById("contact").value;
+ const message=document.getElementById("message").value.trim();
+ if(!name||!selectedService||!selectedDetail){alert("Please fill all required fields.");return}
+ const whatsappMessage=`Hello WEBARA! I want to enquire about your services.\n\nName: ${name}\nPhone: ${phone||"Not provided"}\n\nSelected Service: ${selectedService}\nRequirement: ${selectedDetail}\nBudget: ${budget}\nPreferred Contact: ${contact}\n\nAdditional Details:\n${message||"None"}\n\nPlease share the details and final quotation. Thank you!`;
+ window.open("https://wa.me/918655567787?text="+encodeURIComponent(whatsappMessage),"_blank");
+});
+</script>
+</body>
+</html>
